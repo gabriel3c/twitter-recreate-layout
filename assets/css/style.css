@@ -1,0 +1,170 @@
+/*BODY*/
+* {
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/*conteudo do cabeçalho*/
+.header {
+  flex-basis: 30%;
+  max-width: 250px;
+}
+
+/*cabeçalho logo*/
+.headerLogoImage {
+}
+
+.headerLogoImage img {
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.headerLogoImage figcaption {
+  display: none;
+}
+
+.headerMenuNav {
+}
+
+.menuNavList {
+}
+
+.menuNavItem {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.menuNavItem:hover {
+  transition: 300ms;
+  background-color: rgb(228, 226, 224);
+  border-radius: 20px;
+}
+
+#profilePhoto {
+  border-radius: 50%;
+}
+.menuNavItem img {
+  width: 26px;
+}
+
+.menuNavItem a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+
+  margin-left: 25px;
+  text-align: start;
+}
+
+/* MUDANÇA DE COR */
+#screenColor {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: 25px;
+}
+.changeColor:hover {
+  transition: 300ms;
+  background-color: rgb(228, 226, 224);
+  border-radius: 20px;
+  cursor: pointer;
+}
+#darkColor {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(41, 45, 46);
+  border-radius: 50%;
+}
+#middleColor {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(55, 101, 112);
+  border-radius: 50%;
+}
+#lightColor {
+  width: 40px;
+  height: 40px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+
+/* CONTEUDO PRINCIPAL*/
+
+.mainContent {
+  flex-basis: 70%;
+  border-left: 1px solid #e7ecf0;
+  border-right: 1px solid #e7ecf0;
+  max-width: 566px;
+}
+.mainContentTitle {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+.mainContentForm {
+  padding: 10px 30px;
+  border-top: 1px solid #e7ecf0;
+  border-bottom: 10px solid #e7ecf0;
+  text-align: right;
+}
+.mainContentForm textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none; /*borda que aparece quando selecionado*/
+  resize: none /*retira opção de alterar tamanho do textarea */;
+  height: 55px;
+  font-size: 15px;
+}
+.mainContentForm button {
+  background-color: #1da1f2;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+}
+.mainContentFeed {
+}
+.tweetsList {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.tweetBox {
+  padding: 20px 10px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1px solid #e7ecf0;
+}
+.tweetBox img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.tweetContent {
+  padding-left: 10px;
+}
+.tweetContent h2 {
+  display: inline-block;
+}
+.tweetContent span {
+  display: inline-block;
+  color: #828282;
+  margin-left: 10px;
+}
+.tweetContent p {
+  margin-top: 10px;
+  color: #333333;
+  text-align: justify;
+}

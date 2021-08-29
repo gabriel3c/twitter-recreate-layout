@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- imagem logo-->
+        <figure class="headerLogoImage">
+          <img src="./assets/img/bird 1.svg" alt="Logo Ken-Te-Vi" />
+          <figcaption hidden>Logo Ken-Te-Vi</figcaption>
+          <!--figcaption é uma legenda-->
+        </figure>
+
+        <!-- menu de navegação-->
+        <nav class="headerMenuNav">
+          <!-- lista de itens (links, ou sei la o q)-->
+          <ul class="menuNavList">
+            <!-- linha da lista-->
+            <li class="menuNavItem">
+              <img src="./assets/img/Home.png" alt="" />
+              <!-- tag a faz o link, a de âncora-->
+              <a href="#">Página Inicial</a>
+            </li>
+            <li class="menuNavItem">
+              <img src="./assets/img/Hashtag.png" alt="" />
+              <a href="">Explorar</a>
+            </li>
+            <li class="menuNavItem">
+              <img src="./assets/img/Notification.png" alt="" />
+              <a href="">Notificações</a>
+            </li>
+            <li class="menuNavItem">
+              <img src="./assets/img/Group.png" alt="" />
+              <a href="">Mensagens</a>
+            </li>
+            <li class="menuNavItem">
+              <img src="./assets/img/Group (1).png" alt="" />
+              <a href="">Itens Salvos</a>
+            </li>
+            <li class="menuNavItem">
+              <img src="./assets/img/Group (2).png" alt="" />
+              <a href="">Listas</a>
+            </li>
+            <li class="menuNavItem">
+              <img
+                src="./assets/img/ProfilePhoto.jpg"
+                alt=""
+                id="profilePhoto"
+              />
+              <a href="">Perfil</a>
+            </li>
+            <li class="menuNavItem">
+              <img src="./assets/img/Group (3).png" alt="" />
+              <a href="">Mais</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="screenColor">
+          <div class="changeColor" id="darkColor"></div>
+          <div class="changeColor" id="middleColor"></div>
+          <div class="changeColor" id="lightColor"></div>
+        </div>
+      </header>
+
+      <main class="mainContent">
+        <!--titulo-->
+        <h2 class="mainContentTitle">Home</h2>
+
+        <!--formulario-->
+        <form class="mainContentForm" action="#">
+          <textarea
+            name="textoTweet"
+            placeholder="O que está acontecendo?"
+          ></textarea>
+          <button type="submit">Tweetar</button>
+        </form>
+
+        <!--feed-->
+        <section class="mainContentFeed">
+          <!--lista de twets-->
+          <ul class="tweetsList">
+            <!--tweets-->
+            <li class="tweetBox">
+              <!--img usuario-->
+              <img
+                class="tweetProfileImage"
+                src="./assets/img/meowthProfile.png"
+                alt=""
+              />
+
+              <!--caixa com infos do usuario-->
+              <div class="tweetContent">
+                <h2>Meowth</h2>
+                <span>@meowth.equiperocket - 03:40 - 10/3/2021</span>
+                <p>
+                  Nós temos muitas coisas em comum, a mesma terra, o mesmo ar, o
+                  mesmo céu. Talvez se começassemos a olhar para as coisas que
+                  temos um comum invés de diferente... Bom, quem sabe?
+                </p>
+              </div>
+            </li>
+
+            <li class="tweetBox">
+              <!--img usuario-->
+              <img
+                class="tweetProfileImage"
+                src="./assets/img/KakashiProfile.png"
+                alt=""
+              />
+
+              <!--caixa com infos do usuario-->
+              <div class="tweetContent">
+                <h2>João Kakashi</h2>
+                <span>@sensei.7team - 21:30 - 15/5/2021</span>
+                <p>
+                  O Naruto pode ser um pouco duro às vezes Talvez você não saiba
+                  disso Mas o Naruto também Cresceu sem pai Na verdade, ele
+                  nunca conheceu nenhum de seus pais E nunca teve nenhum amigo
+                  em nossa aldeia Mesmo assim, eu nunca vi ele chorar Ficar
+                  zangado ou se dar por vencido Ele está sempre disposto a
+                  melhorar Ele quer ser respeitado, é o sonho dele E o Naruto
+                  daria a vida por isso sem hesitar Meu palpite é que ele se
+                  cansou de chorar E decidiu fazer alguma coisa a respeito
+                </p>
+              </div>
+            </li>
+
+            <li class="tweetBox">
+              <!--img usuario-->
+              <img
+                class="tweetProfileImage"
+                src="./assets/img/CarolProfile.png"
+                alt=""
+              />
+
+              <!--caixa com infos do usuario-->
+              <div class="tweetContent">
+                <h2>Carol</h2>
+                <span>@carol.twd 09/6/2021</span>
+                <p>Just.....just look at the flowers...</p>
+              </div>
+            </li>
+
+            <li class="tweetBox">
+              <!--img usuario-->
+              <img
+                class="tweetProfileImage"
+                src="./assets/img/ProfilePhoto.jpg"
+                alt=""
+              />
+
+              <!--caixa com infos do usuario-->
+              <div class="tweetContent">
+                <h2>Gabriel</h2>
+                <span>@gabriel.hart - 08:39 - 29/08/2021</span>
+                <p>É...praticar também é aprender</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

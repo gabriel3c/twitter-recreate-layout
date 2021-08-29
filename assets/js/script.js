@@ -1,29 +1,31 @@
-const body = document.querySelector('body')
-
-const tweetar = document.querySelector('button')
-
-const textarea = document.querySelector('textarea')
-
-const feed = document.querySelector('.tweetsList')
-
+//DARK, BLUE E LIGHTMODE
+const html = document.querySelector('html')
 const btnDark = document.querySelector('#darkColor')
 const btnMiddle = document.querySelector('#middleColor')
 const btnLight = document.querySelector('#lightColor')
 
 btnDark.addEventListener('click', function () {
   console.log('ckicou')
-  body.style.backgroundColor = '#000000'
+  html.classList.add('dark-mode')
+  html.classList.remove('blue-mode')
 })
 
 btnMiddle.addEventListener('click', function () {
   console.log('ckicou')
-  body.style.backgroundColor = 'rgb(21, 32, 43)'
+  html.classList.add('blue-mode')
+  html.classList.remove('dark-mode')
 })
 
 btnLight.addEventListener('click', function () {
   console.log('ckicou')
-  body.style.backgroundColor = '#FFFFFF'
+  html.classList.remove('dark-mode')
+  html.classList.remove('blue-mode')
 })
+
+//TWEET
+const tweetar = document.querySelector('button')
+const textarea = document.querySelector('textarea')
+const feed = document.querySelector('.tweetsList')
 
 function pegarTweet(event) {
   event.preventDefault()

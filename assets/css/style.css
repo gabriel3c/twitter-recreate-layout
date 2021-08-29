@@ -1,8 +1,31 @@
-/*BODY*/
-* {
+:root {
+  --body-bg: #fafafa;
+  --body-color: rgb(31, 31, 31);
+  --link-color: #222;
+  --link-color-hover: #ec5840;
+  --border-color: rgb(240, 240, 240);
 }
+
+.dark-mode:root {
+  --body-bg: #191a1b;
+  --body-color: white;
+  --link-color: #dee2e6;
+  --link-color-hover: #3cc368;
+  --border-color: rgb(47, 51, 54);
+}
+
+.blue-mode:root {
+  --body-bg: rgb(26, 46, 66);
+  --body-color: white;
+  --link-color: #dee2e6;
+  --link-color-hover: #3cc368;
+  --border-color: rgb(56, 68, 77);
+}
+
+/*BODY*/
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--body-bg);
 }
 .container {
   width: 100%;
@@ -58,7 +81,7 @@ body {
 }
 
 .menuNavItem a {
-  color: black;
+  color: var(--body-color);
   text-decoration: none;
   font-size: 22px;
 
@@ -83,7 +106,7 @@ body {
 #darkColor {
   width: 40px;
   height: 40px;
-  background-color: rgb(41, 45, 46);
+  background-color: rgb(61, 61, 61);
   border-radius: 50%;
 }
 #middleColor {
@@ -103,20 +126,20 @@ body {
 
 .mainContent {
   flex-basis: 70%;
-  border-left: 1px solid #e7ecf0;
-  border-right: 1px solid #e7ecf0;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   max-width: 566px;
 }
 .mainContentTitle {
-  color: black;
+  color: var(--body-color);
   font-size: 22px;
   font-weight: bold;
   padding: 10px 30px;
 }
 .mainContentForm {
   padding: 10px 30px;
-  border-top: 1px solid #e7ecf0;
-  border-bottom: 10px solid #e7ecf0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   text-align: right;
 }
 .mainContentForm textarea {
@@ -127,6 +150,8 @@ body {
   resize: none /*retira opção de alterar tamanho do textarea */;
   height: 55px;
   font-size: 15px;
+  background: unset;
+  color: var(--body-color);
 }
 .mainContentForm button {
   background-color: #1da1f2;
@@ -145,7 +170,7 @@ body {
   padding: 20px 10px;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1px solid #e7ecf0;
+  margin-bottom: 1px solid rgb(47, 51, 54);
 }
 .tweetBox img {
   border-radius: 50%;
@@ -156,6 +181,7 @@ body {
   padding-left: 10px;
 }
 .tweetContent h2 {
+  color: var(--body-color);
   display: inline-block;
 }
 .tweetContent span {
@@ -165,6 +191,6 @@ body {
 }
 .tweetContent p {
   margin-top: 10px;
-  color: #333333;
+  color: var(--body-color);
   text-align: justify;
 }
